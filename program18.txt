@@ -1,0 +1,114 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Administrator>mongo
+2022-05-17T11:44:44.302+0530 I CONTROL  [main] Hotfix KB2731284 or later update
+is not installed, will zero-out data files
+MongoDB shell version: 3.2.22
+connecting to: test
+> use movie
+switched to db movie
+> db.moviedetails.insert("title":"jo and jo","writer":"unnikrishnan","year":"202
+2","actor":"neslin")
+> db.moviedetails.insert({"title":"jo and jo","writer":"unnikrishnan","year":"20
+22","actor":"neslin"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"jana gana  mana","writer":"unnikrishnan","yea
+r":"2022","actor":"prithviraj"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"kuruthi","writer":"b.jhon","year":"2022","act
+or":"prithviraj"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"12thmen","writer":"sumyya","year":"2022","act
+or":"sethu"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"kgf","writer":"prasantniel","year":"2022","ac
+tor":"rocking star yash"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"kgf2","writer":"prasantniel","year":"2022","a
+ctor":"rocking star yash"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"kgf3","writer":"prasantniel","year":"2022","a
+ctor":"rocking star yash"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"rrr","writer":"prasantniel","year":"2022","ac
+tor":" jnr ntr"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"salar","writer":"prasantniel","year":"2022","
+actor":" prabas"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.insert({"title":"salar2","writer":"prasantniel","year":"2022",
+"actor":" prabas"})
+WriteResult({ "nInserted" : 1 })
+> db.moviedetails.find().pretty()
+{
+        "_id" : ObjectId("62833e6b9cbc3990dddad81e"),
+        "title" : "jo and jo",
+        "writer" : "unnikrishnan",
+        "year" : "2022",
+        "actor" : "neslin"
+}
+{
+        "_id" : ObjectId("62833e8d9cbc3990dddad81f"),
+        "title" : "jana gana  mana",
+        "writer" : "unnikrishnan",
+        "year" : "2022",
+        "actor" : "prithviraj"
+}
+{
+        "_id" : ObjectId("62833eef9cbc3990dddad820"),
+        "title" : "kuruthi",
+        "writer" : "b.jhon",
+        "year" : "2022",
+        "actor" : "prithviraj"
+}
+{
+        "_id" : ObjectId("62833f2d9cbc3990dddad821"),
+        "title" : "12thmen",
+        "writer" : "sumyya",
+        "year" : "2022",
+        "actor" : "sethu"
+}
+{
+        "_id" : ObjectId("62833f7d9cbc3990dddad822"),
+        "title" : "kgf",
+        "writer" : "prasantniel",
+        "year" : "2022",
+        "actor" : "rocking star yash"
+}
+{
+        "_id" : ObjectId("62833f8a9cbc3990dddad823"),
+        "title" : "kgf2",
+        "writer" : "prasantniel",
+        "year" : "2022",
+        "actor" : "rocking star yash"
+}
+{
+        "_id" : ObjectId("62833f959cbc3990dddad824"),
+        "title" : "kgf3",
+        "writer" : "prasantniel",
+        "year" : "2022",
+        "actor" : "rocking star yash"
+}
+{
+        "_id" : ObjectId("62833fb49cbc3990dddad825"),
+        "title" : "rrr",
+        "writer" : "prasantniel",
+        "year" : "2022",
+        "actor" : " jnr ntr"
+}
+{
+        "_id" : ObjectId("62833fc89cbc3990dddad826"),
+        "title" : "salar",
+        "writer" : "prasantniel",
+        "year" : "2022",
+        "actor" : " prabas"
+}
+{
+        "_id" : ObjectId("62833fe29cbc3990dddad827"),
+        "title" : "salar2",
+        "writer" : "prasantniel",
+        "year" : "2022",
+        "actor" : " prabas"
+}
+>

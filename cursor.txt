@@ -1,0 +1,31 @@
+DECLARE
+
+c_id customers_1.id%type;
+
+c_name customers_1.name%type;
+
+c_addr customers_1.address%type;
+
+CURSOR c_customers_1 is
+
+SELECT id, name, address FROM customers_1;
+
+BEGIN
+
+OPEN c_customers_1;
+
+LOOP
+
+FETCH c_customers_1 into c_id, c_name, c_addr;
+
+EXIT WHEN c_customers_1%notfound;
+
+dbms_output.put_line(c_id || ' ' || c_name || ' ' || c_addr);
+
+END LOOP;
+
+CLOSE c_customers_1;
+
+END;
+
+/

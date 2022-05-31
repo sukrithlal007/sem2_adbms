@@ -1,0 +1,83 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Administrator>mongo
+2022-05-31T10:28:31.479+0530 I CONTROL  [main] Hotfix KB2731284 or later update
+is not installed, will zero-out data files
+MongoDB shell version: 3.2.22
+connecting to: test
+> use emp
+switched to db emp
+> db.Empl.insert({"empno":1,empname:"sukrith","salary":30000,"role":"hr"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":2,empname:"sethu","salary":35000,"role":"manager"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":3,empname:"fasil","salary":30000,"role":"designer"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":4,empname:"summya","salary":33000,"role":"designer"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":5,empname:"hasir","salary":35000,"role":"hr"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":6,empname:"biby","salary":35000,"role":"manager"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":7,empname:"karthik","salary":35000,"role":"hr"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.insert({"empno":8,empname:"ST","salary":35000,"role":"manager"})
+WriteResult({ "nInserted" : 1 })
+> db.Empl.find().pretty()
+{
+        "_id" : ObjectId("6295a11f0ff4885bc85a2b82"),
+        "empno" : 1,
+        "empname" : "sukrith",
+        "salary" : 30000,
+        "role" : "hr"
+}
+{
+        "_id" : ObjectId("6295a13f0ff4885bc85a2b83"),
+        "empno" : 2,
+        "empname" : "sethu",
+        "salary" : 35000,
+        "role" : "manager"
+}
+{
+        "_id" : ObjectId("6295a16c0ff4885bc85a2b84"),
+        "empno" : 3,
+        "empname" : "fasil",
+        "salary" : 30000,
+        "role" : "designer"
+}
+{
+        "_id" : ObjectId("6295a18c0ff4885bc85a2b85"),
+        "empno" : 4,
+        "empname" : "summya",
+        "salary" : 33000,
+        "role" : "designer"
+}
+{
+        "_id" : ObjectId("6295a1a90ff4885bc85a2b86"),
+        "empno" : 5,
+        "empname" : "hasir",
+        "salary" : 35000,
+        "role" : "hr"
+}
+{
+        "_id" : ObjectId("6295a1c20ff4885bc85a2b87"),
+        "empno" : 6,
+        "empname" : "biby",
+        "salary" : 35000,
+        "role" : "manager"
+}
+{
+        "_id" : ObjectId("6295a2120ff4885bc85a2b88"),
+        "empno" : 7,
+        "empname" : "karthik",
+        "salary" : 35000,
+        "role" : "hr"
+}
+{
+        "_id" : ObjectId("6295a2360ff4885bc85a2b89"),
+        "empno" : 8,
+        "empname" : "ST",
+        "salary" : 35000,
+        "role" : "manager"
+}
