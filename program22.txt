@@ -1,0 +1,52 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Administrator>mongo
+2022-06-02T13:59:12.273+0530 I CONTROL  [main] Hotfix KB2731284 or later update
+is not installed, will zero-out data files
+MongoDB shell version: 3.2.22
+connecting to: test
+> use emp
+switched to db emp
+> db.createUser()
+
+> db.createUser({user:"lal",pwd:"123",roles:[{role:"userAdminAnyDatabase",db:"ad
+min"}]})
+Successfully added user: {
+        "user" : "lal",
+        "roles" : [
+                {
+                        "role" : "userAdminAnyDatabase",
+                        "db" : "admin"
+                }
+        ]
+}
+
+> db.createUser(
+{
+user:"slal",
+pwd:"123",
+roles:[{role:"userAdmin",
+db:"emp"}]})
+Successfully added user: {
+        "user" : "slal",
+        "roles" : [
+                {
+                        "role" : "userAdmin",
+                        "db" : "emp"
+                }
+        ]
+}
+
+> db.createUser({user:"sukrith",pwd:"password",roles:[{role:"read",db:"emp",role
+:"readWrite",db:"movie"}]})
+Successfully added user: {
+        "user" : "sukrith",
+        "roles" : [
+                {
+                        "role" : "readWrite",
+                        "db" : "movie"
+                }
+        ]
+}
+>
